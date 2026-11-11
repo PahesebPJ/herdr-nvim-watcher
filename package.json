@@ -1,0 +1,22 @@
+{
+  "name": "herdr-nvim-watcher",
+  "version": "0.1.0",
+  "description": "Auto-opens and updates Neovim in a split pane when files are modified by coding agents in Herdr TUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -e \"require('./index.js')\""
+  },
+  "keywords": [
+    "herdr",
+    "neovim",
+    "tui",
+    "watcher",
+    "coding-agents",
+    "developer-tools"
+  ],
+  "author": "Herdr Contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+id = "herdr-nvim-watcher"
+name = "Herdr Neovim Live Watcher"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+description = "Auto-opens and updates Neovim in a split pane when files are modified by coding agents in Herdr TUI"
+platforms = ["windows", "linux", "macos"]
+
+[[actions]]
+id = "toggle"
+title = "Toggle Neovim Live Watcher"
+contexts = ["workspace", "pane"]
+command = ["node", "index.js", "--toggle"]
+
+[[actions]]
+id = "open-now"
+title = "Open Neovim Split for Current Repo"
+contexts = ["workspace", "pane"]
+command = ["node", "index.js", "--open"]
+
+[[startup]]
+command = ["node", "index.js", "--daemon"]
